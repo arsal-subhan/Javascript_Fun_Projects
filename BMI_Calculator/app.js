@@ -32,15 +32,15 @@ calculateBtn.addEventListener('click', (event) => {
    } 
    
    else if ( result >= 25 &&  result <= 30 ) {
-    bmiMsg = 'Overweight';
-    
+        bmiMsg = 'Overweight';
+
    } 
    
    else if ( result > 30 ) {
-    bmiMsg = 'Obese';
+         bmiMsg = 'Obese';
     
    }
-   
+
 bmiResults.innerHTML = `<p id="bmi_result">BMI = <b>${Math.round(result * 100) / 100}</b>(<span class="${msgColor}"><b>${bmiMsg}</b></span>)</p>`;
 
 });
